@@ -1,24 +1,26 @@
-# README
+# Book Collection
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Book Collection is a Ruby on Rails application for creating, viewing, editing,
+and deleting books. It was created for the CSCE 431 Docker and Git/GitHub labs.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+- Docker Desktop with the WSL 2 backend on Windows
+- The course image: `paulinewade/csce431:sp26v1`
 
-* System dependencies
+## Run the application
 
-* Configuration
+From the directory containing this project, start the course container and then
+run the Rails server inside the container:
 
-* Database creation
+```bash
+rails server --binding=0.0.0.0
+```
 
-* Database initialization
+Open <http://127.0.0.1:3000/books> to use the application.
 
-* How to run the test suite
+## Test
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+rails test
+```
