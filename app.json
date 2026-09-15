@@ -1,28 +1,7 @@
 {
+  "name": "Book Collection",
   "stack": "heroku-24",
-  "addons": [
-    "heroku-postgresql:in-dyno"
-  ],
-  "environments": {
-    "review": {
-      "addons": [
-        "heroku-postgresql:in-dyno"
-      ],
-      "scripts": {
-        "postdeploy": "bundle exec rails db:schema:load"
-      },
-      "env": {
-        "RAILS_ENV": "review",
-        "DISABLE_DATABASE_ENVIRONMENT_CHECK": "1"
-      }
-    }
-  },
-  "buildpacks": [
-    { "url": "heroku/nodejs" },
-    { "url": "heroku/ruby" }
-  ],
-  "env": {
-    "NODE_ENV": "production",
-    "YARN_PRODUCTION": "true"
-  }
+  "buildpacks": [{ "url": "heroku/nodejs" }, { "url": "heroku/ruby" }],
+  "env": { "RAILS_ENV": "production" },
+  "environments": { "review": { "env": { "RAILS_ENV": "review" } } }
 }
