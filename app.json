@@ -1,0 +1,7 @@
+{
+  "name": "Book Collection",
+  "stack": "heroku-24",
+  "buildpacks": [{ "url": "heroku/nodejs" }, { "url": "heroku/ruby" }],
+  "env": { "RAILS_ENV": "production" },
+  "environments": { "review": { "env": { "RAILS_ENV": "review" } } }
+}
