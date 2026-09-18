@@ -1,7 +1,9 @@
 require "test_helper"
 
 class BooksControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
   setup do
+    sign_in Admin.create!(uid: "book-test", email: "reader@example.com")
     @book = Book.create!(title: "The Hobbit")
   end
 

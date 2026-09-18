@@ -22,6 +22,12 @@
   </head>
 
   <body>
+    <% if admin_signed_in? %>
+      <header class="auth-header">
+        <div><strong>Signed in with Google</strong><br><%= current_admin.full_name.presence || current_admin.email %> &middot; <%= current_admin.email %></div>
+        <%= button_to "Sign out", destroy_admin_session_path, method: :delete %>
+      </header>
+    <% end %>
     <%= yield %>
   </body>
 </html>

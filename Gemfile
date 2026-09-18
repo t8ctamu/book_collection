@@ -7,6 +7,10 @@ gem "propshaft"
 # Use PostgreSQL as the database for Active Record
 gem "pg", "~> 1.5"
 gem "json", "~> 2.0"
+gem "devise", "~> 4.9"
+gem "omniauth", "~> 2.1"
+gem "omniauth-rails_csrf_protection", "~> 1.0"
+gem "omniauth-google-oauth2", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]

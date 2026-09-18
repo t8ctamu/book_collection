@@ -1,0 +1,10 @@
+<main class="auth-card">
+  <p class="eyebrow">BOOK COLLECTION</p>
+  <h1>Welcome to your collection</h1>
+  <p>Sign in with Google to view and manage your books.</p>
+  <% if alert.present? %><p role="alert"><%= alert %></p><% end %>
+  <% if notice.present? %><p role="status"><%= notice %></p><% end %>
+  <%= button_to "Sign in with Google", admin_google_oauth2_omniauth_authorize_path,
+    method: :post, data: { turbo: false }, class: "google-sign-in" %>
+  <p class="auth-note">Your Google password is never shared with this app.</p>
+</main>

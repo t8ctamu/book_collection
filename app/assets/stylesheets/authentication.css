@@ -1,0 +1,12 @@
+body { font-family: system-ui, sans-serif; color: #18263b; max-width: 1100px; margin: 40px auto; padding: 0 24px; background: #f7f9fc; }
+.auth-card { max-width: 480px; margin: 12vh auto; padding: 40px; background: white; border: 1px solid #dce3ed; border-radius: 16px; box-shadow: 0 12px 30px #18263b0c; }
+.eyebrow { font-size: 12px; letter-spacing: 2px; font-weight: 700; color: #466284; }
+.auth-card h1 { line-height: 1.2; font-size: 32px; }
+.auth-card p { line-height: 1.6; }
+.google-sign-in { padding: 13px 24px; font: inherit; font-weight: 600; background: #1a73e8; color: white; border: 0; border-radius: 8px; cursor: pointer; }
+.auth-note { font-size: 13px; color: #5b6c83; }
+.auth-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px; margin-bottom: 32px; border: 1px solid #b7d8cc; border-radius: 12px; background: #edf9f3; }
+.auth-header strong { color: #176943; }
+.auth-header button { padding: 8px 16px; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { text-align: left; padding: 16px; border-bottom: 1px solid #dce3ed; }

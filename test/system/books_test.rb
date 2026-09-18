@@ -1,7 +1,9 @@
 require "application_system_test_case"
 
 class BooksTest < ApplicationSystemTestCase
+  include Devise::Test::IntegrationHelpers
   setup do
+    sign_in Admin.create!(uid: "system-test", email: "reader@example.com")
     @book = books(:one)
   end
 
